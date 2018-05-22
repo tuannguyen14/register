@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import { FormControl } from 'react-bootstrap';
-import axios from 'axios';
 
+const $ = require('jquery');
 
 class App extends Component {
   constructor(props) {
@@ -27,13 +27,12 @@ class App extends Component {
   //     //   'Content-Type': 'application/json;charset=UTF-8',
   //     // }
   // });
-  axios({
-    method: 'post',
+  $.ajax({
+    type: "POST",
+    data: JSON.stringify(data),
     url: 'http://localhost:8000/registry',
-    data: JSON.stringify({
-      firstName: 'Fred'
-    })
-  });
+    contentType: "application/json"
+  })
     // axios({
     //   method: 'post',
     //   url: 'http://localhost:8000/registry',
