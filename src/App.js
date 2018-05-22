@@ -7,7 +7,7 @@ const $ = require('jquery');
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {
+    this.state = {hjjnh
       email: '',
       phoneNumber: '',
       name: '',
