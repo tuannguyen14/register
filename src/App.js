@@ -7,7 +7,7 @@ const $ = require('jquery');
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {hjjnh
+    this.state = {
       email: '',
       phoneNumber: '',
       name: '',
@@ -22,26 +22,12 @@ class App extends Component {
       name: this.state.name,
       licensePlates: this.state.licensePlates
     }
-  //   axios.post('http://localhost:8000/registry', JSON.stringify(data), {
-  //     // headers: {
-  //     //   'Content-Type': 'application/json;charset=UTF-8',
-  //     // }
-  // });
-  $.ajax({
-    type: "POST",
-    data: JSON.stringify(data),
-    url: 'http://localhost:8000/registry',
-    contentType: "application/json"
-  })
-    // axios({
-    //   method: 'post',
-    //   url: 'http://localhost:8000/registry',
-    //   headers: {
-    //     'content-type': 'application/json'
-    //   },
-    //   data: JSON.stringify(data)
-    // });
-
+    $.ajax({
+      type: "POST",
+      data: JSON.stringify(data),
+      url: 'http://localhost:8000/registry',
+      contentType: "application/json"
+    })
   }
 
   render() {
@@ -62,22 +48,22 @@ class App extends Component {
             <label for="phoneNumber"><b>Số điện thoại</b></label>
             <div>
               <FormControl type="text" placeholder="Nhập số điện thoại" name="phoneNumber" required
-               value={this.state.phoneNumber}
-               onChange={e => this.setState({ phoneNumber: e.target.value })} />
+                value={this.state.phoneNumber}
+                onChange={e => this.setState({ phoneNumber: e.target.value })} />
             </div>
 
             <label for="name"><b>Tên</b></label>
             <div>
               <FormControl type="text" placeholder="Nhập tên" name="name" required
-               value={this.state.name}
-               onChange={e => this.setState({ name: e.target.value })} />
+                value={this.state.name}
+                onChange={e => this.setState({ name: e.target.value })} />
             </div>
 
             <label for="licensePlates"><b>Biển số xe</b></label>
             <div>
               <FormControl type="text" placeholder="Nhập biển số xe" name="licensePlates" required
-               value={this.state.licensePlates}
-               onChange={e => this.setState({ licensePlates: e.target.value })} />
+                value={this.state.licensePlates}
+                onChange={e => this.setState({ licensePlates: e.target.value })} />
             </div>
 
             <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
