@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './FindUser.css';
-import { FormControl } from 'react-bootstrap';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { Redirect } from 'react-router';
 
@@ -36,12 +35,12 @@ class FindUser extends Component {
     }
 
     onEnterPress = (e) => {
-        if(e.keyCode == 13 && e.shiftKey == false) {
-          e.preventDefault();
-          this.search();
+        if (e.keyCode === 13 && e.shiftKey === false) {
+            e.preventDefault();
+            this.search();
         }
-      }
-      
+    }
+
 
     render() {
         if (this.state.statusSearch) {
@@ -49,10 +48,10 @@ class FindUser extends Component {
         }
         return (
             <div className="App" id="back-ground">
-                <form id="form">
+                <form id="main">
                     <div class="row">
                         <div class="col-md-6">
-                            <div id="title">
+                            <div id="label-header">
                                 <h1>Tìm kiếm thông tin user</h1>
                             </div>
                             <div id="custom-search-input">

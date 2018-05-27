@@ -1,0 +1,46 @@
+#back-ground {
+    background-image: url('../images/BackgroundSearch.jpg');
+    background-size: cover;
+    background-position: center center;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    z-index: -10;
+}
+
+#main-form {
+    background-color: #ccc;
+    position: relative;
+    background-position: center center;
+    width: 695px;
+    height: 610px;
+    display: inline-block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 3px;
+    border: solid 1px #E4E4E4;
+    border-radius: 6px;
+}
+
+#h3 {
+    margin-top: 0;
+    display: inline-block;
+    margin-left: 1%;
+}
+
+#label-header {
+    background-color: cadetblue;
+    width: 95%;
+    text-align: center;
+    border: solid 1px #E4E4E4;
+    border-radius: 6px;
+    margin-top: 1%;
+    margin-left: 2.5%;
+}
+
+#div-table {
+    margin-left: 1%;
+    margin-top: 3%;
+}

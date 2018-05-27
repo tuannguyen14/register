@@ -77,7 +77,7 @@ class Register extends Component {
             <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
 
             <div class="clearfix">
-              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" onClick={() => this.cancel()}>Cancel</button>
+              <button type="button" class="cancelbtn" onClick={() => this.cancel()}>Cancel</button>
               <button type="submit" class="signupbtn" onClick={() => this.signup()}>Sign Up</button>
             </div>
           </div>

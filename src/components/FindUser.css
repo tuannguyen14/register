@@ -8,17 +8,17 @@
         z-index: -10;
     }
 
-    #form {
+    #main {
         background-color: #ccc;
         position: relative;
         background-position: center center;
         width: 100vh;
-        height: 30vh;
+        height: 210px;
         display: inline-block;
         position: fixed;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -70%);
+        transform: translate(-50%, -86%);
         padding: 3px;
         border: solid 1px #E4E4E4;
         border-radius: 6px;
@@ -60,11 +60,17 @@
     }
 
     #title {
+        background-color: cadetblue;
         text-align: center;
-        width: 100vh;
+        border: solid 1px #E4E4E4;
+        border-radius: 6px;
+        margin-top: 1%;
+        margin-left: 2.5%;
+        text-align: center;
+        width: 96vh;
     }
 
     #register {
         text-align: center;
-        margin-top: 1%; 
+        margin-top: 1%;
     }
