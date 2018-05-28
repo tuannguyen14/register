@@ -13,7 +13,7 @@
         position: relative;
         background-position: center center;
         width: 100vh;
-        height: 210px;
+        height: 230px;
         display: inline-block;
         position: fixed;
         top: 50%;
@@ -31,7 +31,7 @@
         background-color: #fff;
         width: 90vh;
         margin-left: 8%;
-        margin-top: 6%;
+        margin-top: 3%;
     }
 
     #custom-search-input input {
@@ -73,4 +73,9 @@
     #register {
         text-align: center;
         margin-top: 1%;
+    }
+
+    #label-header {
+        margin-top: 1%;
+        width: 100px;
     }

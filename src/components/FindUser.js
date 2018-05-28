@@ -50,7 +50,7 @@ class FindUser extends Component {
             <div className="App" id="back-ground">
                 <form id="main">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div>
                             <div id="label-header">
                                 <h1>Tìm kiếm thông tin user</h1>
                             </div>
