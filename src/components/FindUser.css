@@ -79,3 +79,21 @@
         margin-top: 1%;
         width: 100px;
     }
+
+    #input-verify {
+        margin-left: 8%;
+        margin-top: 7%;
+    }
+
+    #submit-verify {
+        margin-top: 0;
+        margin-bottom: 3%;
+        width: 50%;
+        height: 30px;
+        margin-left: 25%;
+        background-color: cadetblue
+    }
+
+    #input-verify error {
+        margin-left: 30%;
+    }
