@@ -12,7 +12,7 @@
     background-color: #ccc;
     position: relative;
     background-position: center center;
-    width: 695px;
+    width: 995px;
     height: 910px;
     display: inline-block;
     position: fixed;
@@ -66,30 +66,41 @@
 
 #item1 {
     display:inline-block;
-    margin-left: 30px;
+    margin-left: 10px;
 }
 
 #item2 {
     display:inline-block;
-    margin-left:170px;
+    margin-left: 65px;
 }
+
+#item3 {
+    display:inline-block;
+    margin-left: 125px;
+}
+
+#item4 {
+    display:inline-block;
+    margin-left: 55px;
+}
+
 
 #th1 {
     display:inline-block;
-    margin-left: 65px;
+    margin-left: 6.5%;
     font-weight: bold;
 }
 
 #th2 {
     display:inline-block;
-    margin-left: 145px;
+    margin-left: 9%;
     font-weight: bold;
 }
   scroll-container {
     margin-top: 1%;
-    margin-left: 3.4%;
+    margin-left: 2%;
     display: block;
-    width: 630px;
+    width: 930px;
     height: 460px;
     overflow-y: scroll;
     scroll-behavior: smooth;

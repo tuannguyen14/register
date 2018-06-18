@@ -7,7 +7,7 @@ class InfoUser extends Component {
         super(props);
         this.state = {
             user: global.searchUser,
-            atEnd: false
+            atEnd: false,
         }
     }
 
@@ -37,13 +37,6 @@ class InfoUser extends Component {
 
 
     render() {
-        const colums = [{
-            Header: 'Biển số xe',
-        }, {
-            Header: 'Lý do vi phạm',
-        }, {
-            Header: 'Ngày vi phạm',
-        }];
         return (
             <div className="App" id="back-ground">
                 <form id="main-form">
@@ -78,10 +71,16 @@ class InfoUser extends Component {
 
                             <div id="th-contener">
                                 <div id="th1">
-                                    <h2>Ngày vi phạm</h2>
+                                    <h3>Ngày vi phạm</h3>
                                 </div>
                                 <div id="th2">
-                                    <h2>Lý do vi phạm</h2>
+                                    <h3>Lý do vi phạm</h3>
+                                </div>
+                                <div id="th2">
+                                    <h3>Tiền phạt</h3>
+                                </div>
+                                <div id="th2">
+                                    <h3>Địa điểm</h3>
                                 </div>
                             </div>
                             <scroll-container>
@@ -95,6 +94,12 @@ class InfoUser extends Component {
                                                     </div>
                                                     <div id="item2">
                                                         <scroll-page>{item.reason}</scroll-page>
+                                                    </div>
+                                                    <div id="item3">
+                                                        <scroll-page>{item.money}</scroll-page>
+                                                    </div>
+                                                    <div id="item4">
+                                                        <scroll-page>{item.address}</scroll-page>
                                                     </div>
                                                 </tr>
                                             </tbody>
