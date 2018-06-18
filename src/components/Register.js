@@ -18,7 +18,7 @@ class Register extends Component {
   }
 
   signup() {
-    var data = {
+    const data = {
       email: this.state.email,
       phoneNumber: this.state.phoneNumber,
       name: this.state.name,

@@ -20,7 +20,7 @@ class FindUser extends Component {
     }
 
     search() {
-        var data = {
+        const data = {
             phoneNumber: this.state.phoneNumber
         }
 
@@ -30,6 +30,7 @@ class FindUser extends Component {
             data: JSON.stringify(data),
             url: 'http://localhost:8000/user-info'
         }
+
         axios(options).then((response) => {
             global.searchUser = response.data;
             this.setState({ statusSearch: true });
@@ -66,7 +67,6 @@ class FindUser extends Component {
             global.searchUser = response.data;
             this.setState({ statusSearch: true });
         }).catch((error) => {
-            alert("aaa")
             this.setState({
                 cssError: "input-verify error"
             })
